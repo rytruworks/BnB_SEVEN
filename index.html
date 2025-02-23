@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B SEVEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+
+</head>
+<!-- 参考ページ -->
+<!-- https://www.keyterrace.co.jp/ -->
+<body>
+    <header>
+        <div class="logo">B&B SEVEN</div>
+    </header>
+    <section class="top">
+            <div class="comment">
+                <h1>Seaside Inn</h1>
+                <h1>B&B SEVEN</h1>
+            </div>
+            <div class="scrolldown1">
+                <span>Scroll</span>
+            </div>
+        </video>
+    </section>
+
+    <section class="underScroll">
+        <div class="belt" id="room">
+            <div class="msg">
+                <div class="msg1">Room</div>
+                <div class="msg2">シモンズのセミダブルでゆっくり休める小さな洋風民宿B&Bセブン。
+                    村の中心にあり、買い物、海水浴などに便利な立地。</div>
+
+            </div>
+        </div>
+        <div class="roomBack">
+            <div class="room"></div>
+        </div>
+        <div class="belt">
+            <div class="msg">
+                <div class="msg1">Washroom</div>
+                <div class="msg2">客室と同フロアにはバルコニーに面した３面彩光の明るい洗面所。
+                    ランドリーも併設。</div>
+
+            </div>
+        </div>
+        <div class="washBack">
+            <div class="wash"></div>
+        </div>
+        <div class="belt">
+            <div class="msg">
+                <div class="msg1">Living</div>
+                <div class="msg2">南向き採光たっぷりの共用リビング。お食事や休憩にお使いいただけます。</div>
+
+            </div>
+        </div>
+        <div class="livingBack">
+            <div class="living"></div>
+        </div>
+    </section>
+    <section class="hooter">
+        <div class="address"><i class="fa-solid fa-signs-post"></i> 東京都新島村本村１−４−３</div>
+        <div class="tel"><i class="fa-solid fa-phone"></i> 04992-5-1106</div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true, distance: "40px", duration: 2000});
+        ScrollReveal().reveal('.msg1', { delay: 200, origin: "left"});
+        ScrollReveal().reveal('.msg2', { delay: 300, origin: "bottom"});
+        ScrollReveal().reveal('.room', { delay: 400, origin: "bottom"});
+        ScrollReveal().reveal('.wash', { delay: 400, origin: "bottom"});
+        ScrollReveal().reveal('.living', { delay: 400, origin: "bottom"});
+    </script>
+</body>
+</html>
