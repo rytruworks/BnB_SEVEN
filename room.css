@@ -1,0 +1,177 @@
+* {
+margin: 0;
+padding: 0;
+}
+  
+/* header */
+
+header {
+background-color: #fff;
+padding: 10px 20px;
+}
+
+.header_container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+margin: 0 auto;
+}
+
+.logo a{
+
+    /* フォント */
+    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+
+    padding: 20px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* メニュー初期状態 */
+.menu ul {
+list-style: none;
+display: flex;
+gap: 80px;
+margin: 0;
+padding: 0;
+}
+
+.menu a {
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+
+.menu a:hover {
+text-decoration: underline;
+}
+
+/* ハンバーガーアイコン（3本線） */
+.menu-toggle {
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 22px;
+background: none;
+border: none;
+cursor: pointer;
+z-index: 1001;
+}
+
+.menu-toggle .bar {
+height: 4px;
+background-color:black;
+border-radius: 2px;
+transition: 0.4s;
+}
+
+/* 紹介section */
+section {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 各紹介項目のバランス設定 */
+
+#room {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid brown;
+}
+
+#pic {
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    height: 80%;
+    /* border: solid; */
+}
+
+/* 寝室 */
+.room {
+    margin: 0;
+    padding: 0;
+    background-image: url(image/seven_edit/DSC01997.jpg);
+    background-size: cover;
+}
+
+.explane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 洗面所 */
+.washbasin {
+    margin: 0;
+    padding: 0;
+    background-image: url(image/seven_edit/DSC02002.jpg);
+    background-size: cover;
+}
+
+/* トイレ */
+
+/* リビング */
+.living {
+    margin: 0;
+    padding: 0;
+    background-image: url(image/seven_edit/DSC02008.jpg);
+    background-size: cover;
+}
+
+/* スマホスタイル */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        background-color: rgb(224, 241, 247);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .menu ul.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* ハンバーガーが「×」に変化 */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+}
+
+
+
+
