@@ -123,6 +123,12 @@ section {
 }
 
 /* トイレ */
+.toilet {
+    margin: 0;
+    padding: 0;
+    background-image: url(image/seven_edit/DSC02010.JPG);
+    background-size: cover;
+}
 
 /* リビング */
 .living {
