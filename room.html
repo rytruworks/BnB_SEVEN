@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B SEVEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="room.css">
+    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+
+</head>
+<!-- 参考ページ -->
+<!-- https://www.keyterrace.co.jp/ -->
+<body>
+    <header>
+        <div class="header_container">
+            <div class="logo"><a href="./index.html">B&B SEVEN</a></div>
+
+                <!-- ハンバーガー / × -->
+            <button class="menu-toggle" aria-label="メニューを開く">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="menu">
+                <ul>
+                  <li><a href="./index.html">TOP</a></li>
+                  <li><a href="/gallery">立地</a></li>
+                  <li><a href="/contact">観光</a></li>
+                  <li><a href="/contact">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div id="room">
+            <div id="pic" class="room"></div>
+            <div id="pic" class="explane">
+                <h1>シモンズ製のセミダブルベッド</h1>
+                <h1>南向き・２面彩光の明るいお部屋</h1>
+            </div>
+        </div>
+        <div id="room">
+            <div id="pic" class="washbasin"></div>
+            <div id="pic" class="explane">
+                <h1>客室と同フロアにはバルコニーに面した</h1>
+                <h1>３面彩光の明るい洗面所</h1>
+            </div>
+        </div>
+        <div id="room">
+            <div id="pic" class="toilet"></div>
+            <div id="pic" class="explane">
+                <h1>自然光で明るく暖かいゆったりスペースのお手洗い</h1>
+            </div>
+        </div>
+        <div id="room">
+            <div id="pic" class="living"></div>
+            <div id="pic" class="explane">
+                <h1>南向き採光たっぷりの共用リビング</h1>
+                <h1>お食事や休憩にお使いいただけます</h1>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true, distance: "40px", duration: 2000});
+        ScrollReveal().reveal('.explane', { delay: 200, origin: "right"});
+        ScrollReveal().reveal('.room', { delay: 400, origin: "bottom"});
+        ScrollReveal().reveal('.washbasin', { delay: 400, origin: "bottom"});
+        ScrollReveal().reveal('.toilet', { delay: 400, origin: "bottom"});
+        ScrollReveal().reveal('.living', { delay: 400, origin: "bottom"});
+    </script>
+</body>
+</html>
